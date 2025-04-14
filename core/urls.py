@@ -19,5 +19,9 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pwa.urls')),
 ]
+
+
+admin.site.site_header = "My Astro Admin"
+admin.site.site_title = "My Astro Admin Portal"
+admin.site.index_title = "Welcome to My Astro Portal"
